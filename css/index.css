@@ -65,3 +65,74 @@
 .spacer {
     flex: 1;
 }
+
+/*
+    flexbox templates
+*/
+.flexbox-row-spacearnd {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+/*
+    rows
+*/
+
+#firstRow > * {
+    margin: 10px;
+}
+
+#secondRow > * {
+    margin: 10px;
+    width: 100%;
+}
+
+/*
+    profile-photo-card
+*/
+
+.profile-photo-card.mdl-card {
+    height: 256px;
+    background: url('../img/profile_pic.jpg') center / cover;
+    flex-basis: 50%;
+}
+.profile-photo-card > .mdl-card__actions {
+    height: 52px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.2);
+}
+.profile-photo-card__filename {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/*
+    about-me
+*/
+
+#aboutMe {
+    flex-basis: 100%;
+}
+
+#moreAboutMe > * {
+    width: 100%;
+}
+#moreAboutMe p {
+    width: 100%;
+}
+
+.socialIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.socialIcons > * {
+    margin: 10px;
+}
